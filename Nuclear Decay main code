@@ -1,0 +1,11 @@
+def nucleardecay(MaxTime, InitialNuclei, decayprobability):                                                                    
+	import random;                                                                                                             
+	Nucleicount = InitialNuclei;                                                                                               
+	for i in range (0, MaxTime):                                                                                               
+		decay = 0;                                                                                                         
+		for j in range (0, Nucleicount):                                                                                   
+			a = random.random();                                                                                       
+			if a <= decayprobability:                                                                                  
+				decay += 1;                                                                                        
+		Nucleicount = Nucleicount - decay;                                                                                 
+		print(Nucleicount);
